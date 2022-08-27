@@ -1,0 +1,111 @@
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+  .connection {
+    display: none;
+  }
+
+  .menu-mobile-open {
+    background-color: transparent;
+    // padding-bottom: none;
+    padding: 0;
+    line-height: 0;
+    border: none;
+  }
+}
+.page-header__conteiner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-header {
+  padding-top: 20px;
+}
+
+// .page-header {
+//   padding-top: 24px;
+//   padding-bottom: 25px;
+//   border-bottom: 1px solid #ececec;
+// }
+
+// .page-nav {
+//   display: flex;
+//   align-items: center;
+// }
+
+// .page-header__conteiner {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+// }
+
+// .menu {
+//   display: flex;
+//   align-items: center;
+// }
+
+// .menu__item:not(:last-child) {
+//   margin-right: 50px;
+// }
+
+// .connection__item:not(:last-child) {
+//   margin-right: 50px;
+// }
+
+// .menu__link {
+//   position: relative;
+//   transition: color 250ms var(--cubic-bezier);
+//   padding-top: 32px;
+//   padding-bottom: 32px;
+//   font-weight: 500;
+//   font-size: 14px;
+//   line-height: 1.33;
+//   letter-spacing: 0.02em;
+//   color: var(--color-menu-link);
+//   &:hover,
+//   &:focus {
+//     color: var(--color-btn-main-hover);
+//   }
+// }
+
+// .menu__link.--curent {
+//   color: var(--color-btn-main-hover);
+// }
+
+// .--curent::after {
+//   position: absolute;
+//   bottom: -1px;
+//   display: block;
+//   content: '';
+//   width: 100%;
+//   height: 4px;
+//   border-radius: 2px;
+//   background-color: var(--color-btn-main-hover);
+// }
+
+// .connection {
+//   display: flex;
+//   align-items: center;
+// }
+
+// .connection__link {
+//   transition: color 250ms var(--cubic-bezier);
+//   display: flex;
+//   align-items: center;
+//   font-weight: 500;
+//   font-size: 14px;
+//   line-height: 1.33;
+//   letter-spacing: 0.02em;
+//   color: var(--color-text-main);
+//   &:hover,
+//   &:focus {
+//     color: var(--color-menu-link-hover);
+//   }
+// }
+
+// .connection__icon {
+//   margin-right: 10px;
+//   fill: currentColor;
+// }

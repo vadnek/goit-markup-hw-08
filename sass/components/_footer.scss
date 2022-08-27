@@ -1,0 +1,110 @@
+.footer {
+  background-color: var(--color-bgd-secondary);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.adress-list {
+  font-style: normal;
+  margin-top: 20px;
+}
+
+.adress__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer__address {
+  flex-grow: 1;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  color: var(--color-footer-adress-link);
+  margin-right: 70px;
+  transition: color 250ms var(--cubic-bezier);
+  &:hover,
+  &:focus {
+    color: var(--color-footer-adress-link-hover);
+  }
+}
+
+.footer-post-adress {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  color: var(--color-btn-text-main);
+  transition: color 250ms var(--cubic-bezier);
+  &:hover,
+  &:focus {
+    color: var(--color-footer-adress-link-hover);
+  }
+}
+
+.footer-adress-link {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  color: var(--color-footer-contacts-link);
+  transition: color 250ms var(--cubic-bezier);
+  &:hover,
+  &:focus {
+    color: var(--color-footer-adress-link-hover);
+  }
+}
+
+.footer__conteiner {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-join {
+  display: block;
+  margin-bottom: 20px;
+  color: var(--color-bgd-main);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.footer-subscribe-icon {
+  height: 20px;
+  fill: white;
+}
+
+.subscribe-block {
+  display: block;
+  width: 570px;
+  margin-left: 93px;
+}
+
+.subscribe-form {
+  display: flex;
+}
+
+.email-footer {
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
+
+  width: 358px;
+  padding: 15px 15px 15px 15px;
+  margin-right: 12px;
+
+  color: var(--color-bgd-main);
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  outline: none;
+  &:hover,
+  &:focus {
+    border-color: var(--color-menu-link-hover);
+  }
+}
