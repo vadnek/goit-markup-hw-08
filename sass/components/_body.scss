@@ -21,6 +21,10 @@ body {
   padding-bottom: 94px;
 }
 
+.section--top-zero {
+  display: none;
+  padding-top: 0;
+}
 // .conteiner {
 //   width: 1200px;
 //   margin-left: auto;
@@ -28,27 +32,35 @@ body {
 //   padding: 0 15px;
 // }
 
-.conteiner {
+.container {
   width: 100%;
   padding: 0 15px;
 }
 
 @media screen and (min-width: 480px) {
-  .conteiner {
-    width: 450px;
+  .container {
+    width: 480px;
     margin-left: auto;
     margin-right: auto;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .conteiner {
-    width: 720px;
+  .container {
+    width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .conteiner {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .section--top-zero {
+    display: block;
+    padding-top: 0;
+  }
+  .container {
     width: 1200px;
   }
 }
