@@ -6,6 +6,10 @@
     display: none;
   }
 
+  .page-header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
   // .menu-btn {
   //   background-color: transparent;
   //   // padding-bottom: none;
@@ -20,14 +24,10 @@
   justify-content: space-between;
 }
 
-.page-header {
-  padding-top: 20px;
-}
-
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 @media screen and (min-width: 768px) {
   .page-header {
-    padding-top: 24px;
+    // padding-top: 24px;
     // padding-bottom: 25px;
     border-bottom: 1px solid #ececec;
   }
@@ -74,7 +74,7 @@
 
   .--curent::after {
     position: absolute;
-    bottom: -1px;
+    bottom: -3px;
     display: block;
     content: '';
     width: 100%;

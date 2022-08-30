@@ -11,7 +11,6 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--color-logotype);
-  margin-right: 93px;
 }
 .logotipe__accent {
   color: #212121;
@@ -29,4 +28,10 @@
 
 .footer__logotipe-accent {
   color: var(--color-logotipe-accent-footer);
+}
+
+@media screen and (min-width: 768px) {
+  .logotipe {
+    margin-right: 93px;
+  }
 }

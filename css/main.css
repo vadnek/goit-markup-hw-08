@@ -85,6 +85,10 @@ button {
   .connection {
     display: none;
   }
+  .page-header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
 .page-header__container {
   display: flex;
@@ -92,13 +96,8 @@ button {
   justify-content: space-between;
 }
 
-.page-header {
-  padding-top: 20px;
-}
-
 @media screen and (min-width: 768px) {
   .page-header {
-    padding-top: 24px;
     border-bottom: 1px solid #ececec;
   }
   .page-nav {
@@ -136,7 +135,7 @@ button {
   }
   .--curent::after {
     position: absolute;
-    bottom: -1px;
+    bottom: -3px;
     display: block;
     content: "";
     width: 100%;
@@ -202,7 +201,6 @@ button {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--color-logotype);
-  margin-right: 93px;
 }
 
 .logotipe__accent {
@@ -223,6 +221,11 @@ button {
   color: var(--color-logotipe-accent-footer);
 }
 
+@media screen and (min-width: 768px) {
+  .logotipe {
+    margin-right: 93px;
+  }
+}
 body {
   font-family: var(--font-family-main);
   color: var(--color-text-main);
@@ -242,8 +245,8 @@ body {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .section--top-zero {
@@ -280,6 +283,10 @@ body {
   .container {
     width: 1200px;
   }
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .hero {
   max-width: 1600px;
@@ -313,6 +320,7 @@ body {
 @media screen and (min-width: 1200px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desctop/hero-desktop/hero-desktop.jpg);
+    padding: 200px 0;
   }
   .hero__title {
     font-weight: 900;
@@ -321,28 +329,17 @@ body {
   }
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .main {
+  .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/hero-mobile/hero-mobile@2x.jpg);
   }
 }
-@media screen and (min-width: 768px) {
-  .main {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/hero-tablet/hero-tablet.jpg);
-  }
-}
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .main {
+  .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet/hero-tablet/hero-tablet@2x.jpg);
   }
 }
-@media screen and (min-width: 1200px) {
-  .main {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desctop/hero-desktop/hero-desktop.jpg);
-    padding: 200px 0;
-  }
-}
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .main {
+  .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desctop/hero-desktop/hero-desktop@2x.jpg);
   }
 }
@@ -379,15 +376,21 @@ body {
 }
 
 .section__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--color-menu-link);
 }
 
+@media screen and (min-width: 1200px) {
+  .section__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
+}
 /* ========== START FLEX ACTIVITY ========== */
 .service__list {
   display: flex;
@@ -510,7 +513,7 @@ body {
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  color: var(--team-icon-color);
+  color: var(--color-fill-icon);
 }
 .clients__link:hover, .clients__link:focus {
   color: var(--acent-color);
@@ -752,6 +755,9 @@ body {
   .filters__item:nth-child(-n+3) {
     margin-bottom: 15px;
   }
+  .filters {
+    margin-bottom: 40px;
+  }
 }
 @media screen and (min-width: 768px) {
   .filters {
@@ -776,6 +782,7 @@ body {
     margin: -15px;
   }
   .drafts__item {
+    display: flex;
     width: 354px;
     text-align: left;
     margin: 15px;
@@ -797,6 +804,7 @@ body {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
+  flex-grow: 1;
 }
 
 .portfolio__title {

@@ -17,8 +17,8 @@ body {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .section--top-zero {
@@ -62,5 +62,9 @@ body {
   }
   .container {
     width: 1200px;
+  }
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
